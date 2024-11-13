@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:level="0" android:drawable="@android:color/holo_red_light" />
+    <item android:level="50" android:drawable="@android:color/holo_orange_light" />
+    <item android:level="100" android:drawable="@android:color/holo_green_light" />
+</level-list>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Searchable Earthquake Content Provider"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lnr"
+        android:visibility="visible"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <!-- Buttons to trigger actions -->
+        <Button
+            android:id="@+id/btn_search_earthquakes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Earthquakes"/>
+
+        <Button
+            android:id="@+id/btn_load_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Images from MediaStore"/>
+
+        <Button
+            android:id="@+id/btn_load_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Contacts"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_load_calendar_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Calendar Events"/>
+
+        <Button
+            android:id="@+id/btn_pick_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Contact"/>
+
+        <!-- TextView to display results -->
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will appear here"
+            android:paddingTop="16dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/earthquakeListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lnr"
+        android:layout_margin="16dp" />
+</RelativeLayout>

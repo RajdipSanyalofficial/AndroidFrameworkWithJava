@@ -1,0 +1,8 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="min_magnitude"
+        android:title="Minimum Magnitude"
+        android:summary="Set the minimum earthquake magnitude"
+        android:inputType="number"
+        android:defaultValue="4.0" />
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+    <user>
+        <name>Rajdip Sanyal</name>
+        <designation>Developer</designation>
+    </user>
+    <user>
+        <name>Pritam</name>
+        <designation>Tester</designation>
+    </user>
+    <user>
+        <name>Soumadeep</name>
+        <designation>Team Lead</designation>
+    </user>
+</users>

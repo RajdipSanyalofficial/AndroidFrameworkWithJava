@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+<!--
+        <TextView
+            android:id="@+id/mytextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web" />
+
+        <TextView
+            android:id="@+id/mytextview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web" />
+
+        <TextView
+            android:id="@+id/mytextview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web" />
+
+        <TextView
+            android:id="@+id/mytextview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web" />
+
+        <ListView
+            android:id="@+id/myList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+-->
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/txt2"
+        android:layout_below="@+id/appbarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/addtodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Todo" />
+
+
+    <!--<include layout="@layout/content_main" /> -->
+
+    <!--
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"/>
+-->
+
+  <!--  <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_dialog_email" /> -->
+
+</RelativeLayout>
